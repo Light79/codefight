@@ -1,0 +1,9 @@
+function adjacentElementsProduct(inputArray) {
+    var n=inputArray.length;
+    var max =-1000;
+    for(var i = 0; i < n-1; i++){
+        if(inputArray[i]*inputArray[i+1]>max)
+            max= inputArray[i]*inputArray[i+1];
+    }
+    return max;
+};

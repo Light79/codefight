@@ -1,0 +1,11 @@
+function centuryFromYear(year) {
+    var century = Math.floor(year/100) ;
+    var tk;
+    if(year%100 !=0){
+            tk = century+1;
+    }else{
+            tk = century;
+    }
+    return tk;
+
+}
