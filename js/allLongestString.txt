@@ -1,0 +1,12 @@
+function allLongestStrings(inputArray) {
+    var ll = inputArray[0].length;
+        for(var i = 1; i < inputArray.length; i++){
+            if(ll<inputArray[i].length){
+                ll = inputArray[i].length;
+            }
+        }
+        inputArray = inputArray.filter((element)=>{
+            return element.length === ll;
+        });
+    return inputArray;
+}
